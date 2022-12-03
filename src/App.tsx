@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route, Routes} from "react-router-dom";
+import Quotes from "./containers/Quotes/Quotes";
+import EditQuote from "./containers/EditQuote/EditQuote";
+import NewQuote from "./containers/NewQuote/NewQuote";
 import './App.css';
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <main className="container">
+        <Routes>
+        <Route path="/" element={<Quotes/>}/>
+        <Route path="/submit-quote" element={<NewQuote/>}/>
+        <Route path="/quotes/:category" element={<Quotes/>}/>
+        <Route path="/quote/:id/edit" element={<EditQuote/>}/>
+        </Routes>
+      </main>
     </div>
   );
 }
