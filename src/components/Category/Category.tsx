@@ -3,6 +3,8 @@ import {NavLink} from "react-router-dom";
 import {CATEGORY} from "../../Categories";
 import './Category.css';
 
+
+
 const Category: React.FC = () => {
   return (
     <div className='category-block'>

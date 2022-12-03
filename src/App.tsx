@@ -4,7 +4,6 @@ import Quotes from "./containers/Quotes/Quotes";
 import EditQuote from "./containers/EditQuote/EditQuote";
 import NewQuote from "./containers/NewQuote/NewQuote";
 import './App.css';
-import Category from "./components/Category/Category";
 
 function App() {
   return (

@@ -12,12 +12,13 @@ const EditQuote = () => {
 
   const fetchOneQuote = useCallback(async () => {
     try {
-      const quoteResponse = await axiosApi.get<QuoteApi>('/quotes/' + id + '.json');
+      const quoteResponse = await axiosApi.get<QuoteApi>('/quotes.json');
       setQuote(quoteResponse.data);
     } finally {
-      // setLoading(false)
+
     }
   }, [id]);
+  console.log(fetchOneQuote)
 
   useEffect(() => {
     fetchOneQuote().catch(console.error);
