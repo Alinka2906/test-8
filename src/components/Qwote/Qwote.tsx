@@ -15,7 +15,7 @@ const Quote:React.FC<Props> = ({quote}) => {
           <div className="category">Category: {quote.category}</div>
           <div className="author">Author: {quote.author}</div>
           <div className="text">{quote.text}</div>
-          <NavLink to={`/quote/${quote.id}/edit`} className="more left">Edit or Delete</NavLink>
+          <NavLink to={`/quote/${quote.category}/edit`} className="more left">Delete</NavLink>
         </div>
       </>
     </div>

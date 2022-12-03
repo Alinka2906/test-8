@@ -10,8 +10,8 @@ const Category: React.FC = () => {
         <li className="category-links">
           <NavLink to="/">All</NavLink>
         </li>
-        {CATEGORY.map((quote, i) => (
-          <li key={i} className="category-links">
+        {CATEGORY.map((quote) => (
+          <li className="category-links">
             <NavLink to={`/quotes/${quote.category}`}> {quote.title}</NavLink>
           </li>
         ))}

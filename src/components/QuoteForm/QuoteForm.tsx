@@ -52,7 +52,7 @@ const QuoteForm: React.FC<Props> = ({onSubmit, existingQuote}) => {
         </select>
         <input
           className="Input"
-          placeholder="Quote author..."
+          placeholder="Quote author"
           type="text"
           name="author"
           value={quote.author}

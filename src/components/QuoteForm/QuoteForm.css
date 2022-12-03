@@ -21,3 +21,11 @@
     width: 150px;
     margin-left: 43%;
 }
+
+.btn-form {
+    padding: 7px 15px;
+    border: 2px solid cornflowerblue;
+    border-radius: 7px;
+    color: darkblue;
+    font-weight: bold;
+}
