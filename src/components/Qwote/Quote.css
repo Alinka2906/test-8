@@ -1,19 +1,19 @@
 .quote {
     padding: 10px 15px;
-    background: linear-gradient(to bottom, rgba(243,226,199,0.3) 0%,rgba(193,158,103,0.5) 100%);
-    border: 2px solid Tan;
+    background: linear-gradient(to bottom, #ccc 0%, lightblue 100%);
+    border: 2px solid cornflowerblue;
     border-radius: 10px;
     margin-bottom: 30px;
     min-height: 180px;
 }
 
 .author {
-    border-bottom: 1px solid tan;
+    border-bottom: 1px solid cornflowerblue;
     padding: 5px 0 10px;
 }
 
 .category {
-    border-bottom: 1px solid tan;
+    border-bottom: 1px solid cornflowerblue;
     padding: 5px 0 10px;
     text-transform: capitalize;
 }
@@ -26,10 +26,10 @@
 
 .more{
     padding: 12px 36px;
-    color: saddlebrown;
+    color: darkblue;
     font-size: 18px;
     border-radius: 40px;
-    background: linear-gradient(90deg,Tan,rgba(243,226,199,0.6));
+    background: linear-gradient(90deg,#ccc,lightblue);
     outline: none;
     font-weight: bold;
     text-decoration: none;
@@ -38,7 +38,7 @@
     margin-bottom: 15px;
     margin-top: 5px;
     margin-left: 42%;
-    border: 1px solid tan;
+    border: 1px solid cornflowerblue;
     min-width: 200px;
 }
 

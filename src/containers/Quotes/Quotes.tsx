@@ -11,18 +11,19 @@ import {QuoteApi, QuoteType} from "../../type";
 const Quotes = () => {
   const [quotes, setQuotes] = useState<QuoteType[]>([]);
   const [loading, setLoading] = useState(false);
-  const {category} = useParams();
+  const category = useParams();
+
+  console.log(category)
 
   useEffect(() => {
     const getQuotes = async () => {
       try {
         const quotesResponse = await axiosApi
-          .get<QuoteApi>(`${category ?  `/quotes.json?orderBy="category"&equalTo="${category}"` : '/quotes.json'}`);
-        console.log(quotesResponse)
+          .get(`${category ?  `quotes.json?orderBy="category"&equalTo="${category}"` : '/quotes.json'}`);
         const QuotesCopy = Object.keys(quotesResponse.data)
           .map(quote => ({
             ...quotesResponse.data[quote],
-            id: quote,
+            id: quote
           }));
         setQuotes(QuotesCopy);
       } finally {

@@ -1,5 +1,5 @@
 .header{
-    background: Tan;
+    background: lightblue;
 }
 
 .header-logo{
@@ -8,8 +8,8 @@
 
 .header-logo p {
     font-size: 45px;
-    margin: 20px 0 0 0;
-    color: SaddleBrown;
+    margin: 20px 0;
+    color: darkblue;
     font-weight: 600;
 }
 

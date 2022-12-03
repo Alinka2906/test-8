@@ -1,8 +1,9 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import {CATEGORY} from "../../Categories";
+import './Category.css';
 
-const Category = () => {
+const Category: React.FC = () => {
   return (
     <div className='category-block'>
       <ul className="category-ul">

@@ -4,12 +4,11 @@ import Quotes from "./containers/Quotes/Quotes";
 import EditQuote from "./containers/EditQuote/EditQuote";
 import NewQuote from "./containers/NewQuote/NewQuote";
 import './App.css';
-import Header from "./components/Header/Header";
+import Category from "./components/Category/Category";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
       <main className="container">
         <Routes>
         <Route path="/" element={<Quotes/>}/>
